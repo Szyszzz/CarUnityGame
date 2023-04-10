@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 26039c839ff056a4b9a88d438f85bef7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wheelMesh: {fileID: -2309305249758762421, guid: 523bb7f409f8ee244aa0dcf4448ea79b, type: 3}
+  - rimTexture: {fileID: 2800000, guid: f5976e4c2a12a394e9352b623fb4607f, type: 3}
+  - sidewallTexture: {fileID: 2800000, guid: c303c4d468bb87d41a04c5a7e9f68290, type: 3}
+  - treadTexture: {fileID: 2800000, guid: c3b2591fafa75bb4390b2741563fc178, type: 3}
+  - rimShader: {fileID: -6465566751694194690, guid: 853e3e3ef530e954f9160fe38b68c652, type: 3}
+  - sideShader: {fileID: -6465566751694194690, guid: 903c539915db1da42af98f644d8317f0, type: 3}
+  - treadShader: {fileID: -6465566751694194690, guid: f6efc04157aeb6842b51dbde28d8b0a2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
