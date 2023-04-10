@@ -453,8 +453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CarGFX: {fileID: 5616414884232504558}
   BaseMaterial: {fileID: 2100000, guid: 047605941f00e53419ba049ac00135e3, type: 2}
-  ChassisColor: {r: 0.9245283, g: 0.19733925, b: 0.14391243, a: 0}
-  WindowsColor: {r: 1, g: 1, b: 1, a: 0}
+  ChassisColor: {r: 0, g: 0.59607846, b: 0.5058824, a: 0}
+  WindowsColor: {r: 0, g: 0, b: 0, a: 0}
   CarDecals: {fileID: 0}
   UseDecal: 0
 --- !u!114 &1287660053
@@ -535,7 +535,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: ac9673a4ae73cd74da3f8014f8e0be85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
