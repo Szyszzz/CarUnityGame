@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Engine", menuName = "ScriptableObjects/Car_parts/Engine")]
 public class Engines : ScriptableObject
 {
-    public string name;
+    public string engineName;
     public float maxRPM;
     public float idleRPM;
     public AnimationCurve torqueCurve;

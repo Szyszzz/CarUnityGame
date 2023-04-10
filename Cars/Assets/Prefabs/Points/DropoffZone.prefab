@@ -142,3 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e185fcd076ec2c4091d068081eb6659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedPoints: 0
+  carPointsScript: {fileID: 0}
+  score: {fileID: 0}

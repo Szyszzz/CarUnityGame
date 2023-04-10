@@ -471,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CarRigidbody: {fileID: 4888008637460910740}
   MassMultiplier: 10
+  score: {fileID: 0}
   stockMass: 0
   addedMass: 0
   currentMass: 0

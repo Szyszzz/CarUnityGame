@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class PickupCarScript : MonoBehaviour
 {
     public Rigidbody CarRigidbody;
     public float MassMultiplier = 1;
+    public ScoreBoard score;
+    private float ScoreMultiplier = 1;
 
     [SerializeField] private float stockMass;
     [SerializeField] private float addedMass;
@@ -26,16 +29,25 @@ public class PickupCarScript : MonoBehaviour
         currentMass = stockMass + addedMass;
         CarRigidbody.mass = currentMass;
         currentPoints += points;
+        ScoreMultiplier++;
+
+        score.UpdateNumbers(score.score, currentPoints.ToString());
+        score.UpdateNumbers(score.multiplier, ScoreMultiplier.ToString());
     }
 
     public int DropOffBox()
     {
+        ScoreMultiplier = 1;
+
         currentMass = stockMass;
         addedMass = 0;
         CarRigidbody.mass = currentMass;
 
         int points = currentPoints;
         currentPoints = 0;
+
+        score.UpdateNumbers(score.score, currentPoints.ToString());
+        score.UpdateNumbers(score.multiplier, ScoreMultiplier.ToString());
 
         return points;
     }
