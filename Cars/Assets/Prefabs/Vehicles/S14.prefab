@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505629113268097590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: S14New
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5556103828728087385}
   - component: {fileID: 4263830826916757632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: F_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4855236071268148700}
   - component: {fileID: 2724871585079895586}
   - component: {fileID: 1550294401227077027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exhaust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 4888008637460910745}
   - component: {fileID: 2952678810682094754}
   - component: {fileID: 1287660053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: S14
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ MonoBehaviour:
   CarGFX: {fileID: 5616414884232504558}
   BaseMaterial: {fileID: 2100000, guid: 047605941f00e53419ba049ac00135e3, type: 2}
   ChassisColor: {r: 0, g: 0.59607846, b: 0.5058824, a: 0}
-  WindowsColor: {r: 0, g: 0, b: 0, a: 0}
+  WindowsColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
   CarDecals: {fileID: 0}
   UseDecal: 0
 --- !u!114 &1287660053
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 2932944602707598355}
   - component: {fileID: 4544804961274061482}
   - component: {fileID: 4348686781999673168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chassis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 2100000, guid: ac9673a4ae73cd74da3f8014f8e0be85, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -567,7 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6553175791639436273}
   - component: {fileID: 5623477261789172359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: R_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,7 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3195256916017306466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exhaust Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5336464605732673928}
   - component: {fileID: 7677019392397553451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: F_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 8067736718535835768}
   - component: {fileID: 8067736718535835774}
   - component: {fileID: 8067736718535835775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 8067736718840093637}
   - component: {fileID: 8067736718840093643}
   - component: {fileID: 8067736718840093636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 8067736718954215708}
   - component: {fileID: 8067736718954215906}
   - component: {fileID: 8067736718954215907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 8067736720270509739}
   - component: {fileID: 8067736720270509737}
   - component: {fileID: 8067736720270509738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8067736720399353229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CameraFocus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,7 +1096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9134760394621766155}
   - component: {fileID: 8184188168466943671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: R_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,6 +1159,10 @@ PrefabInstance:
     - target: {fileID: 5782648400123792688, guid: e36f4e90bf1bc794f8475cb5a5a966e4, type: 3}
       propertyPath: m_Name
       value: ExhaustParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782648400123792688, guid: e36f4e90bf1bc794f8475cb5a5a966e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5782648400123792693, guid: e36f4e90bf1bc794f8475cb5a5a966e4, type: 3}
       propertyPath: m_RootOrder

@@ -16,6 +16,11 @@ public class CarLivery : MonoBehaviour
 
     void Start()
     {
+        ChangeCarColor();
+    }
+
+    private void ChangeCarColor()
+    {
         carMaterial = new Material(BaseMaterial);
         carMaterial.SetColor("_CarColor", ChassisColor);
         carMaterial.SetColor("_WindowsColor", WindowsColor);
@@ -28,10 +33,5 @@ public class CarLivery : MonoBehaviour
         Material[] mat = CarGFX.GetComponent<Renderer>().materials;
         mat[0] = carMaterial;
         CarGFX.GetComponent<Renderer>().materials = mat;
-    }
-
-    void Update()
-    {
-        
     }
 }
