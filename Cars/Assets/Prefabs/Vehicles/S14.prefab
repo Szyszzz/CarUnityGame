@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 4888008637460910741}
   - component: {fileID: 4888008637460910745}
   - component: {fileID: 2952678810682094754}
-  - component: {fileID: 1287660053}
+  - component: {fileID: 2839583974740742485}
   m_Layer: 6
   m_Name: S14
   m_TagString: Player
@@ -396,10 +396,10 @@ MonoBehaviour:
   currentGear: 1
   isCarInReverse: 0
   accelerator: 0
-  acceleratorSmoothness: 1.5
+  acceleratorSmoothness: 0.9
   brake: 0
-  brakeForce: 200
-  brakeSmoothness: 1.5
+  brakeForce: 400
+  brakeSmoothness: 1.8
   isHandbrakeOn: 0
   handbrakeForceMultiplier: 0.9
 --- !u!114 &4888008637460910741
@@ -457,7 +457,7 @@ MonoBehaviour:
   WindowsColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
   CarDecals: {fileID: 0}
   UseDecal: 0
---- !u!114 &1287660053
+--- !u!114 &2839583974740742485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -466,13 +466,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4888008637460910742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 957eabfcf8fe14947a514ce94407bba9, type: 3}
+  m_Script: {fileID: 11500000, guid: 867149d27e4d7524e919d324e3a169cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  engine: {fileID: 11400000, guid: 7f2d3b528107ad84ab55f8c173d7249f, type: 2}
-  currentRPM: 0
-  currentTorque: 0
-  currentHP: 0
+  CarRigidbody: {fileID: 4888008637460910740}
+  MassMultiplier: 10
+  stockMass: 0
+  addedMass: 0
+  currentMass: 0
+  currentPoints: 0
 --- !u!1 &5616414884232504558
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +486,7 @@ GameObject:
   - component: {fileID: 2932944602707598355}
   - component: {fileID: 4544804961274061482}
   - component: {fileID: 4348686781999673168}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chassis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
