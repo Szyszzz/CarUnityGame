@@ -8,7 +8,7 @@ public class PickupCarScript : MonoBehaviour
     public Rigidbody CarRigidbody;
     public float MassMultiplier = 1;
     public ScoreBoard score;
-    private float ScoreMultiplier = 1;
+    private int ScoreMultiplier = 1;
 
     [SerializeField] private float stockMass;
     [SerializeField] private float addedMass;
@@ -28,7 +28,7 @@ public class PickupCarScript : MonoBehaviour
         addedMass += MassMultiplier * mass;
         currentMass = stockMass + addedMass;
         CarRigidbody.mass = currentMass;
-        currentPoints += points;
+        currentPoints += points * ScoreMultiplier;
         ScoreMultiplier++;
 
         score.UpdateNumbers(score.score, currentPoints.ToString());
