@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4d6ad9005793b478b299acd8329022, type: 3}
   m_Name: SR20
   m_EditorClassIdentifier: 
-  name: SR20
+  engineName: SR20
   maxRPM: 7000
   idleRPM: 700
   torqueCurve:
@@ -28,41 +28,41 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.21530859
     - serializedVersion: 3
-      time: 1666.5125
-      value: 50.811344
-      inSlope: 0.023854
-      outSlope: 0.023854
+      time: 1500.9155
+      value: 48.728672
+      inSlope: 0.020031938
+      outSlope: 0.020031938
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.36648056
-      outWeight: 0.2628299
+      inWeight: 0.08484557
+      outWeight: 0.6981272
     - serializedVersion: 3
-      time: 5465.109
-      value: 141.35815
-      inSlope: 0.0030978974
-      outSlope: 0.0030978974
+      time: 5280.3667
+      value: 104.6774
+      inSlope: 0.009616479
+      outSlope: 0.009616479
       tangentMode: 0
       weightedMode: 3
       inWeight: 0.3794517
-      outWeight: 0.45790863
+      outWeight: 0.31733313
     - serializedVersion: 3
-      time: 6662.469
-      value: 118.63522
+      time: 7125.3643
+      value: 101.16348
+      inSlope: -0.049630173
+      outSlope: -0.049630173
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.07283262
+      outWeight: 0.68215287
+    - serializedVersion: 3
+      time: 7443.874
+      value: 19.757324
       inSlope: -0.04816556
       outSlope: -0.04816556
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.22097273
+      inWeight: 0.44428638
       outWeight: 1
-    - serializedVersion: 3
-      time: 7000
-      value: 19.293682
-      inSlope: -0.5843927
-      outSlope: -0.5843927
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0.16239561
-      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -79,17 +79,17 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.12700704
     - serializedVersion: 3
-      time: 5000
+      time: 3687.5
       value: 200
       inSlope: 0.00037269047
-      outSlope: 0.00044094835
+      outSlope: 0.00008893613
       tangentMode: 1
       weightedMode: 0
       inWeight: 0.21754621
-      outWeight: 0.3953562
+      outWeight: 1
     - serializedVersion: 3
-      time: 7000
-      value: 150
+      time: 6868.75
+      value: 100.91849
       inSlope: -0.05452401
       outSlope: -0.05452401
       tangentMode: 0
@@ -99,4 +99,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  engineBrakingValue: 0.9
+  engineBrakingValue: 1

@@ -292,7 +292,7 @@ public class CarMovement1 : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") > 0)
             accel = accelerator + Input.GetAxisRaw("Vertical") * Time.deltaTime * acceleratorSmoothness;
         else
-            accel = accelerator - Time.deltaTime * brakeSmoothness;
+            accel = accelerator * Time.deltaTime * brakeSmoothness;
 
         if (accel <= 0.01f)
             accel = 0f;
@@ -374,7 +374,7 @@ public class CarMovement1 : MonoBehaviour
         return brakingForce / driveAxles;
     }
 
-    private void OnValidate()
+    private void Start()
     {
         UpdateWheelListsAndStats();
         GenerateWheelGFX();

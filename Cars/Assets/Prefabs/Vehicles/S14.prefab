@@ -70,7 +70,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!146 &4263830826916757632
 WheelCollider:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -381,7 +381,7 @@ MonoBehaviour:
     wheels:
     - {fileID: 8184188168466943671}
     - {fileID: 5623477261789172359}
-  maxSteeringAngle: 30
+  maxSteeringAngle: 40
   driveAxles: 1
   engine: {fileID: 11400000, guid: 7f2d3b528107ad84ab55f8c173d7249f, type: 2}
   currentTorque: 0
@@ -397,7 +397,7 @@ MonoBehaviour:
   currentGear: 1
   isCarInReverse: 0
   accelerator: 0
-  acceleratorSmoothness: 0.9
+  acceleratorSmoothness: 1
   brake: 0
   brakeForce: 400
   brakeSmoothness: 1.8
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CarRigidbody: {fileID: 4888008637460910740}
-  MassMultiplier: 1
+  MassMultiplier: 10
   score: {fileID: 0}
   stockMass: 0
   addedMass: 0
@@ -611,7 +611,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!146 &5623477261789172359
 WheelCollider:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -706,7 +706,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: -90}
 --- !u!146 &7677019392397553451
 WheelCollider:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1140,7 +1140,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!146 &8184188168466943671
 WheelCollider:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
