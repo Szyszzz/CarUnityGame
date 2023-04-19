@@ -16,6 +16,9 @@ public class CheatCodes : MonoBehaviour
             }
 
             Debug.LogWarning("CheatCode");
-        }       
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+            Application.Quit();
     }
 }
