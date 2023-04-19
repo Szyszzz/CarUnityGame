@@ -57,6 +57,7 @@ public class PickupCarScript : MonoBehaviour
         int points = currentPoints;
         currentPoints = 0;
 
+        GameStateManager.instance.FullScore += points;
 
         score.UpdateNumbers(score.score, currentPoints.ToString());
         score.UpdateNumbers(score.multiplier, ScoreMultiplier.ToString());
