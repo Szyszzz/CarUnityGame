@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Emission Variant
+  m_Shaders:
+  - first: {fileID: -6465566751694194690, guid: fbfddb2daadc560498ed1a928a7082b2, type: 3}
+    second:
+      variants: []
+  - first: {fileID: -6465566751694194690, guid: a3647eaf1d029af4eb6d245abfee37f8, type: 3}
+    second:
+      variants: []
+  - first: {fileID: -6465566751694194690, guid: 8a7ba00d30ce2ba4bab9fb638ed21ad7, type: 3}
+    second:
+      variants: []

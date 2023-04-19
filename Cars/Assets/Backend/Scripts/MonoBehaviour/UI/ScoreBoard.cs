@@ -8,6 +8,7 @@ public class ScoreBoard : MonoBehaviour
     public TextMeshProUGUI fullscore;
     public TextMeshProUGUI score;
     public TextMeshProUGUI multiplier;
+    public TextMeshProUGUI weight;
 
     public void UpdateNumbers(TextMeshProUGUI tochange, string text)
     {

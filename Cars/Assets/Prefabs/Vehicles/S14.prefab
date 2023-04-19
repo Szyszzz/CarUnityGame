@@ -125,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 4463747485220099936}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0.0087774275, z: -0.056045637}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1505629113268097590}
@@ -289,13 +289,13 @@ Rigidbody:
   m_GameObject: {fileID: 4888008637460910742}
   serializedVersion: 2
   m_Mass: 1253
-  m_Drag: 0.03
-  m_AngularDrag: 0.5
+  m_Drag: 0.1
+  m_AngularDrag: 0.15
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &4888008637460910746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,16 +325,16 @@ MonoBehaviour:
     damper: 2000
     targetPosition: 1
     forwardFriction:
-      extremumSlip: 1
-      extremumValue: 1.5
+      extremumSlip: 0.4
+      extremumValue: 1
       asymptoteSlip: 0.8
-      asymptoteValue: 1.2
+      asymptoteValue: 0.5
       stiffness: 1
     sidewaysFriction:
       extremumSlip: 1
-      extremumValue: 1.5
+      extremumValue: 1
       asymptoteSlip: 0.8
-      asymptoteValue: 1.2
+      asymptoteValue: 0.5
       stiffness: 1
     handbrakeFriction:
       extremumSlip: 1
@@ -361,10 +361,10 @@ MonoBehaviour:
     damper: 2000
     targetPosition: 1
     forwardFriction:
-      extremumSlip: 1
+      extremumSlip: 0.4
       extremumValue: 1
       asymptoteSlip: 0.8
-      asymptoteValue: 0.8
+      asymptoteValue: 0.5
       stiffness: 1
     sidewaysFriction:
       extremumSlip: 1
@@ -383,6 +383,7 @@ MonoBehaviour:
     - {fileID: 5623477261789172359}
   maxSteeringAngle: 40
   driveAxles: 1
+  wheelObject: {fileID: 11400000, guid: 47a0161b8d3b58148abf69d8864d5a0e, type: 2}
   engine: {fileID: 11400000, guid: 7f2d3b528107ad84ab55f8c173d7249f, type: 2}
   currentTorque: 0
   motorRPM: 0
@@ -393,7 +394,7 @@ MonoBehaviour:
   - 1.88352
   - 1.44
   - 1
-  finalDrive: 3.692
+  finalDrive: 5.692
   currentGear: 1
   isCarInReverse: 0
   accelerator: 0
@@ -471,12 +472,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CarRigidbody: {fileID: 4888008637460910740}
-  MassMultiplier: 10
+  MassMultiplier: 3
   score: {fileID: 0}
   stockMass: 0
   addedMass: 0
   currentMass: 0
   currentPoints: 0
+  massPercent: 0
 --- !u!114 &2839583974740742490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,7 +521,7 @@ Transform:
   m_GameObject: {fileID: 5616414884232504558}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1505629113268097590}
@@ -553,8 +555,8 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 047605941f00e53419ba049ac00135e3, type: 2}
+  - {fileID: 2100000, guid: ac9673a4ae73cd74da3f8014f8e0be85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

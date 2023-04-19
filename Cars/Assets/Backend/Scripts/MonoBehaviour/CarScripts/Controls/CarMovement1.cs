@@ -98,6 +98,8 @@ public class CarMovement1 : MonoBehaviour
     public float maxSteeringAngle;
 
     public int driveAxles;
+    public Wheels wheelObject;
+
 
     [Space(5)]
     [Header("Engine")]
@@ -171,7 +173,7 @@ public class CarMovement1 : MonoBehaviour
             Transform rGFX = axle.rWheel.transform.Find("Wheel_GFX");
 
             if (axle.wheelPrefab == null)
-                axle.wheelPrefab = AssetDatabase.LoadAssetAtPath("Assets/Wheels/1/Wheel_GFX.prefab", typeof(GameObject)) as GameObject;
+                axle.wheelPrefab = wheelObject.LoadWheel();
 
             if (lGFX == null)
                 lGFX = Instantiate(axle.wheelPrefab, axle.lWheel.transform).transform;
@@ -227,7 +229,7 @@ public class CarMovement1 : MonoBehaviour
 
         wheelRPM = wheelRPM / driveAxles;
 
-        float newRPM = Mathf.Clamp(engine.idleRPM + (wheelRPM * finalDrive * gears[currentGear]), engine.idleRPM, engine.maxRPM);
+        float newRPM = Mathf.Clamp(wheelRPM * finalDrive * gears[currentGear], engine.idleRPM, engine.maxRPM);
         return Mathf.Lerp(lastMotorRPM, newRPM, Time.deltaTime);
     }
 
@@ -382,21 +384,14 @@ public class CarMovement1 : MonoBehaviour
         ValidateHowManyDriveAxles();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         CorrectWheelRotations();
-        ChangeGears();
-        CalculateAccelerator();
-        CalculateBrakePedal();
-        HandbrakeInput();
-
-        motorRPM = CalculateCurrentRPM();
-        currentTorque = CurrentMotorTorque(motorRPM);
 
         float torquePerWheel = currentTorque / (driveAxles * 2);
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
-        Debug.Log($"G: {currentGear} Engine RPM: {motorRPM}");
+        Debug.Log($"G: {currentGear} Engine RPM: {motorRPM} Accel: {accelerator}");
 
         foreach (Axle axle in axles)
         {
@@ -412,5 +407,16 @@ public class CarMovement1 : MonoBehaviour
                 wheel.brakeTorque = axleBrakingForce / 2;
             }
         }
+    }
+
+    void Update()
+    {
+        ChangeGears();
+        CalculateAccelerator();
+        CalculateBrakePedal();
+        HandbrakeInput();
+
+        motorRPM = CalculateCurrentRPM();
+        currentTorque = CurrentMotorTorque(motorRPM);
     }
 }
