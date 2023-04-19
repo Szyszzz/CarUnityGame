@@ -294,9 +294,9 @@ public class CarMovement1 : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") > 0)
             accel = accelerator + Input.GetAxisRaw("Vertical") * Time.deltaTime * acceleratorSmoothness;
         else
-            accel = accelerator * Time.deltaTime * brakeSmoothness;
+            accel = accelerator * Time.deltaTime * acceleratorSmoothness;
 
-        if (accel <= 0.01f)
+        if (accel <= 0.0001f)
             accel = 0f;
 
         accelerator = Mathf.Clamp(accel, 0f, 1f);
