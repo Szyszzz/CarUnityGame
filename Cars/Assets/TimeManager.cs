@@ -20,7 +20,6 @@ public class TimeManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         timeInSeconds = TimeLimit.x * 60 + TimeLimit.y;
@@ -33,7 +32,6 @@ public class TimeManager : MonoBehaviour
         Debug.Log("Time passed");
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (WasEventSent)
